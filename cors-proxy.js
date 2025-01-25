@@ -1,3 +1,5 @@
+const cors = require("cors")
+
 const fs = require('fs');
 const https = require('https');
 const httpProxy = require('http-proxy');
