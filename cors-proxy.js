@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 
-const prod_url = "https://smartsearch.spefix.com"
+const prod_url = "https://proxy-green-one.vercel.app/proxy?target=https://smartsearch.spefix.com"
 
 app.use(cors({
     origin: prod_url,
