@@ -9,6 +9,16 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+
+
+
+const prod_url = "https://smartsearch.spefix.com"
+
+app.use(cors({
+    origin: prod_url,
+}))
+
+
 // Environment variables
 const host = process.env.HOST || '0.0.0.0';
 const port = process.env.PORT || 8082;
